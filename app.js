@@ -10,11 +10,11 @@ app.use(express.static(publicFolderPath));
 app.get("/", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/index.html"))
 })
-app.get('/register.html', function(req,res) {
+app.get('/register', function(req,res) {
     res.sendFile(path.join(__dirname,'./views/register.html'))
 })
 
-app.get('/login.html', function(req,res) {
+app.get('/login', function(req,res) {
     res.sendFile(path.join(__dirname,'./views/login.html'))
 })
 app.listen(process.env.PORT || 3000, function () {
