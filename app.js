@@ -18,4 +18,5 @@ app.get('/login', function(req,res) {
     res.sendFile(path.join(__dirname,'./views/login.html'))
 })
 app.listen(process.env.PORT || 3000, function () {
-    console.log("Servidor corriendo")};
+    console.log("Servidor corriendo")
+});
