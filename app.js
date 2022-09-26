@@ -10,3 +10,10 @@ app.listen(3000, () => {
 app.get("/", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/index.html"))
 })
+app.get('/register.html', function(req,res) {
+    res.sendFile(path.join(__dirname,'./views/register.html'))
+})
+
+app.get('/login.html', function(req,res) {
+    res.sendFile(path.join(__dirname,'./views/login.html'))
+})

@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-size: Roboto;
+    font-family: Roboto;
 }
 .header{
     width: 100vw;
@@ -14,8 +14,7 @@
     width: 100vw;
     height: 150px;
     background-color: #EAC926;
-    padding: 0%;
-    margin: 0%;
+   
 }
 .sec-sub1{
     width: 100%;
@@ -60,18 +59,16 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-
- 
-
-
-  
-
 }
 .buscar{
     width: 400px;
+    border:solid 1px #EAC926;
+    border-radius: 10px;
 }
 .lupa{
     width: 35px;
+    border:solid 1px #EAC926;
+    border-radius: 5px;
 }
 .forma-de-compra{
     width: 30%;
@@ -81,15 +78,12 @@
 
 .sec-sub2{
 
+    width: 100%;
+    height: 45%;
+
+
 }
-.burger-menu{
-    display: none;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    color: #03264C;
-    
-}
+
 
 .cont2{
 
@@ -98,6 +92,39 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: flex-end;
+    padding-top: 40px;
+    
+}
+.nav1{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.nav-burguer{
+    display: none;
+}
+.nav2{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+}
+
+.burger-menu{
+    display: none;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: #03264C;
+    
+}
+a{
+    text-decoration: none;
 }
 .section2{
     width: 100vw;
@@ -110,6 +137,7 @@
 }
 .main{
     width: 100vw;
+    
 }
 .productos{
     width: 100%;
@@ -218,10 +246,8 @@
 
 }
 .icono-footer{
-    background-color: #03264C;
-    width: 3em;
-    
-    padding-bottom: 10px;
+    color: #1259c3;
+   
 }
 .usuario-protegido{
     width: 27%;
@@ -241,14 +267,84 @@
     width: 20 vw;
     height: 12 hw;
 }
+.formulario-contenedor{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ebebeb;
+}
+.contain-form{
+    width: 100%;
+    
+    
+}
+.formulario{
+    background-color: #ebebeb;
+}
+.input-form{
+    width: 100%;
+    padding: 8px;
+    display: block;
+    margin: 2px auto;
+    box-sizing: border-box;
+    border: 1px solid #D5CAD8;
+    border-radius: 10px;
+}
+.footer{
+    display: block;
+}
 @media only screen and (max-width: 674px) and (min-width: 320px){
     .sec-sub1{
         display: flex;
+        flex-direction: column;
         flex-wrap: nowrap;
+        justify-content: space-around;
 
+    }
+    .container-logo{
+        width: 50%;
+    }
+    .buscador{
+        width: 50%;
+    }
+    .forma-de-compra{
+        width: 100%;
     }
     .sec-sub2{
         display:none;
+    }
+    .productos-central{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .nav-burguer{
+        display: block;
+        text-align: center;
+    }
+    .articulos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0%;
+    }
+    .formulario-contenedor{
+        width: 100vw;
+    }
+    .forma-pago{
+        width: 90%;
+    }
+    .envio-gratis{
+        width: 90%;
+    }
+    .usuario-protegido{
+        width: 90%;
     }
 
 }
